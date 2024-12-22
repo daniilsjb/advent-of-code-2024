@@ -19,7 +19,7 @@ fun main() {
     println("Answer: ${part2(data)}")
 }
 
-fun parse(path: String): Pair<List<Int>, List<Int>> {
+private fun parse(path: String): Pair<List<Int>, List<Int>> {
     val xs = mutableListOf<Int>()
     val ys = mutableListOf<Int>()
 
@@ -35,13 +35,13 @@ fun parse(path: String): Pair<List<Int>, List<Int>> {
     return Pair(xs, ys)
 }
 
-fun part1(data: Pair<List<Int>, List<Int>>): Int =
+private fun part1(data: Pair<List<Int>, List<Int>>): Int =
     data.let { (xs, ys) ->
         (xs.sorted() zip ys.sorted())
             .sumOf { (x, y) -> (x - y).absoluteValue }
     }
 
-fun part2(data: Pair<List<Int>, List<Int>>): Int {
+private fun part2(data: Pair<List<Int>, List<Int>>): Int {
     val (xs, ys) = data
     val cache = ys.groupingBy { it }.eachCount()
     return xs.sumOf { it * (cache[it] ?: 0) }
