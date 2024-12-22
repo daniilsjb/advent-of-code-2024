@@ -6,7 +6,7 @@ This repository contains my solutions for [Advent of Code](https://adventofcode.
 
 | Day | Part 1 | Part 2 | Solution                       |
 |-----|:------:|:------:|--------------------------------|
-| 1   |        |        | [Day01.kt](src/day01/Day01.kt) |
+| 1   |   ✓    |   ✓    | [Day01.kt](src/day01/Day01.kt) |
 | 2   |        |        |                                |
 | 3   |        |        |                                |
 | 4   |        |        |                                |
