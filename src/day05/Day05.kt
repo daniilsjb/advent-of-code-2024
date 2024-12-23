@@ -18,12 +18,12 @@ fun main() {
     println("Answer: ${part2(data)}")
 }
 
-data class Rule(
+private data class Rule(
     val predecessor: Int,
     val successor: Int,
 )
 
-data class Manual(
+private data class Manual(
     val rules: Set<Rule>,
     val updates: List<List<Int>>,
 )
